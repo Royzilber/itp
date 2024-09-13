@@ -21,3 +21,4 @@ but the walking was too fast for me, so i added a wait block under the next cust
 - next i did some nice background to make it look a bit nicer, and i saw that there is a code there so i wanted to make some sound when you start the game, that i made a block that sais when the game starts play a cheering sound, it was nice. 
 -that's it i think, i had fun doing this, and i night improve and add things to it later when i have some time, maybe my own music :)
 thank you.
+.
