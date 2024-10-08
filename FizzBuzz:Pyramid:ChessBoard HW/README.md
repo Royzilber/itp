@@ -1,4 +1,4 @@
-##Pseudo code
+#Pseudo code
 #FizzBuzz
 i thought about this and came up with a pseudo code.
 i need to make a variable that equals to 1. 
@@ -68,7 +68,7 @@ for (let i = 1; i <= 100; i++) {
 
 worked!
 
-##Pyramid Pseudo code
+#Pyramid Pseudo code
 i wanted the user to choose a number and i used the prompt command 
 i set the variable number and the user have to choose between 1-8
 i want the code to limit the user between only numbers between 1-8 
