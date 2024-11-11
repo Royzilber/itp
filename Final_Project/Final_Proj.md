@@ -8,13 +8,13 @@ My project will be a platform for a game we play with friends which we usualy wr
 
 # List at least 3 resources you know you will use in developing your project
 
-1. <a href="https://www.instructables.com/Create-a-Fun-Random-Word-Generator-With-HTML-and-J/">Random word generator tutoroal</a>
+1. <a href="">https://www.instructables.com/Create-a-Fun-Random-Word-Generator-With-HTML-and-J/</a>
 
-2. <a href="https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript">How to create a timer</a>
+2. <a href="">https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript</a>
 
-3. <a href="https://www.w3schools.com/css/">Css Tutorial</a> 
+3. <a href="">https://www.w3schools.com/css/</a> 
 
-4. <a href="https://zguyun.com/blog/how-to-combine-html-css-and-javascript-in-one-file/">How to combine HTML CSS and JS</a> 
+4. <a href="">https://zguyun.com/blog/how-to-combine-html-css-and-javascript-in-one-file/</a> 
 
 
 
