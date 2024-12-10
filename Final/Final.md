@@ -48,6 +48,9 @@ i connnected the HTML code to JavaScript code for the buttons using the followin
 ii wanted to make a timer in the game that counts off 1 minute. 
  i tried to use the article of the timer but couldnt make it work, when i pressed generate word it would stay on 1:00 so i asked chatGPT to add a timer into my code that starts when i press generate word and dosent work when i press skip word, and it worked. 
 
+ # webstie 
+ Finally i uploaded to the web, i made an index.html file and put it on my webstie repasotory and it works!
+
  ## Problems i faced 
 
  i could manage the word array, but i couldnt figure out how to dedact a word when it's used, i called my friend who is a software engenier and he guided me through the process and added the const randomWord = words.splice(randomIndex, 1)[0];
@@ -77,6 +80,8 @@ ii wanted to make a timer in the game that counts off 1 minute.
  [Random Word Generator] [https://www.instructables.com/Create-a-Fun-Random-Word-Generator-With-HTML-and-J/]
 
  [buttons with html and css] [https://www.shecodes.io/athena/118358-how-to-create-a-button-in-html-and-css]
+
+ https://zguyun.com/blog/how-to-combine-html-css-and-javascript-in-one-file/ 
 
  ChatGPT
 
