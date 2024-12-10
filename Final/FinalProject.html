@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Word Generator with Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        #randomWord {
+            font-size: 24px;
+            color: #34495e;
+            margin: 20px 0;
+            min-height: 40px;
+        }
+        #timer {
+            font-size: 20px;
+            color: #34495e;
+            margin: 10px 0;
+        }
+        #buttonContainer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Word Generator</h1>
+        <div id="timer">00:10</div>
+        <p id="randomWord"></p>
+        <div id="buttonContainer">
+            <button id="generateButton" class="btn">Generate Word</button>
+            <button id="skipButton" class="btn">Skip Word</button>
+        </div>
+    </div>
+
+    <script>
+        const words = ["חיים", "תותח", "אור", "שמחה", "לב"];
+        const generateButton = document.getElementById("generateButton");
+        const skipButton = document.getElementById("skipButton");
+        const randomWordElement = document.getElementById("randomWord");
+        const timerElement = document.getElementById("timer");
+
+        generateButton.addEventListener("click", generateRandomWord);
+        skipButton.addEventListener("click", generateRandomWord);
+
+        let timeLeft = 10;
+        let timerId = null;
+
+        function myTimer() {
+            timeLeft--;
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (timeLeft > 0) {
+                timerId = setTimeout(myTimer, 1000);
+            } else {
+                endGame();
+            }
+        }
+
+        function endGame() {
+            randomWordElement.textContent = "Time's Up!";
+            generateButton.disabled = true;
+            skipButton.disabled = true;
+            words.length = 0;
+        }
+
+        function generateRandomWord() {
+            if (timerId === null) {
+                timerId = setTimeout(myTimer, 1000);
+            }
+
+            if (words.length === 0) {
+                randomWordElement.textContent = "GAME OVER";
+                clearTimeout(timerId);
+                return;
+            }
+
+            const randomIndex = Math.floor(Math.random() * words.length);
+            const randomWord = words.splice(randomIndex, 1)[0];
+            randomWordElement.textContent = `Random Word: ${randomWord}`;
+        }
+    </script>
+</body>
+</html>
